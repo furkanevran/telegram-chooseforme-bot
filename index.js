@@ -10,7 +10,7 @@ bot.on("message", (msg) => {
 
     if (msg.text !== null && msg.text.length > 0) {
         try {
-            const options = data
+            const options = msg.text
                 .trim()
                 .split(",")
                 .map((x) => x.trim())
