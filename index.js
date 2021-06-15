@@ -17,7 +17,7 @@ const getMessage = (text) => {
             return [null, null];
         }
 
-        const chosen = ${options[Math.floor(Math.random() * options.length)]};
+        const chosen = options[Math.floor(Math.random() * options.length)];
 
         return [chosen, null];
     } catch (e) {
